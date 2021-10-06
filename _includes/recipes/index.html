@@ -1,0 +1,19 @@
+<div class="card-columns m-3 mt-5">
+
+    {% for recipe in site.posts %}
+      {%- if recipe.tags contains "菜谱-Recipes" %}
+        {%- assign recipe_id    = recipe.name | slugify -%}
+        {%- assign recipe_img   = recipe.image -%}
+        {%- assign recipe_name  = recipe.name -%}
+        {%- assign recipe_desc  = recipe.description -%}
+        {%- assign recipe_url   = recipe.html_url -%}
+        {%- assign recipe_tags = recipe.tags -%}
+        {%- assign recipe_url = recipe.url | relative_url -%}
+
+        {% include recipes/recipe-card.html %}
+
+      {%- endif -%}
+
+    {% endfor %}
+    
+  </div>

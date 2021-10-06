@@ -1,7 +1,7 @@
 ---
 name: The Movies Project
 tools: [C#, XML, WPF]
-image: https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png
+image: https://frontier-drupal.s3-eu-west-1.amazonaws.com/production/frontier-corp/s3fs-public/press-releases/mastheads/planet-coaster-mac-keyart-logo.jpg
 description: This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!
 ---
 

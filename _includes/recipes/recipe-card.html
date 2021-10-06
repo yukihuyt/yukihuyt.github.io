@@ -1,0 +1,18 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ recipe_url }}" class="project card text-themed">
+    {%- if recipe_img -%}
+    <img id="{{ recipe_id }}-img" class="card-img-top" src="{{ recipe_img }}" alt="{{ recipe_name }}" />
+    {%- endif -%}
+    <div class="card-body">
+      <h5 id="{{ recipe_id }}-name" class="card-title">
+        {{ recipe_name }}
+      </h5>
+      <p id="{{ recipe_id }}-desc" class="card-text">{{ recipe_desc }}</p>
+      <p id="{{ recipe_id }}-tags" class="card-text">
+        {%- for tag in recipe_tags -%}
+        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        {%- endfor -%}
+      </p>
+    </div>
+  </a>
+</div>
